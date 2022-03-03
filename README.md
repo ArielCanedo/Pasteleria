@@ -1,3 +1,6 @@
 # Pasteleria
  Prácticas de Launx Caso: Pastelería
-<a href="pastelcliente.html">Enlace a otra página</a>
+ <br>
+<a href="pastelcliente.html">Enlace página para el cliente</a>
+<br>
+<a href="pastelusuario.html">Enlace página para el pastelero</a>
