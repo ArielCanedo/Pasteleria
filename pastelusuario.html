@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <style>
+      div.contenedor {
+      width: 80%;
+       background-color: #f1f1f1
+      }
+
+      button.centrado {
+      width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+      margin-left: 50%;
+      transform: translateX(-50%);
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Estilo de header */
+      header {
+          background-color: rgb(243, 94, 218);
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+      }
+
+      /* Crear 2 columnas con la misma posición en la fila */
+      nav {
+          float: left;
+          width: 27%;
+          height: 600px;
+          /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 2px;
+      }
+
+      nav ul {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      article {
+          float: left;
+          padding: 2px;
+          width: 73%;
+          background-color: #f1f1f1;
+          height: 600px;
+      }
+
+      /* Clear floats after the columns */
+      section::after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+      /* Estilo de footer */
+      footer {
+          background-color: rgb(243, 94, 218);
+          padding: 10px;
+          text-align: center;
+          color: white;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+
+          nav,
+          article {
+              width: 100%;
+              height: auto;
+          }
+      }
+  </style>
+  </head>
+
+  <body>
+  
+      <header>
+          <h2>Panel de control</h2>
+          
+          
+      </header>
+  
+      <section>
+          <nav>
+              <ul>
+                  <a href="https://imgur.com/lo2lU3D"><img src="https://i.imgur.com/lo2lU3D.png" width="420" height="480" title="logo psateleria" /></a><br>
+  
+              </ul>
+          </nav>
+  
+          <article>
+            <table>
+              <h1>Ingredientes disponibles en cocina</h1>
+              <tr>
+            
+                <th scope="col">Sabor de pastel</th>
+                <th scope="col">Cantidad necesaria</th>
+                <th scope="col">Cantidad total</th>
+                <th scope="col">Pasteles que alcanza</th>
+              </tr>
+            
+              <tr>
+            
+                <td>Chocolate</td>
+                <td>200gm</td>
+                <td>10kg</td>
+                <td>50</td>
+              </tr>
+            
+              <tr>
+            
+                <td>Vainilla</td>
+                <td>180gm</td>
+                <td>10kg</td>
+                <td>55</td>
+              </tr>
+            
+              <tr>
+            
+                <td>Fresa</td>
+                <td>200gm</td>
+                <td>5kg</td>
+                <td>25</td>
+              </tr>
+
+              <tr>
+            
+                <td>Cajeta</td>
+                <td>150gm</td>
+                <td>5kg</td>
+                <td>33</td>
+              </tr>
+            
+              <tr>
+            
+                <th scope="row">Adornos</th>
+                <td></td>
+                <td></td>
+                <td><strong></strong></td>
+              </tr>
+              <tr>
+            
+                <td>Chispas de chocolate</td>
+                <td>60gm</td>
+                <td>1kg</td>
+                <td>16</td>
+              </tr>
+              <tr>
+            
+                <td>Durazno</td>
+                <td>80gm</td>
+                <td>2kg</td>
+                <td>25</td>
+              </tr>
+              <tr>
+            
+                <td>Barra de chocolate</td>
+                <td>3pz</td>
+                <td>100pz</td>
+                <td>33</td>
+              </tr>
+              <tr>
+            
+                <td>Núez</td>
+                <td>50gm</td>
+                <td>1kg</td>
+                <td>20</td>
+              </tr>
+              <tr>
+            
+                <td>Fresas</td>
+                <td>30gm</td>
+                <td>2km</td>
+                <td>66</td>
+              </tr>
+              <hr>
+            </table>
+            <hr>
+            <br>
+            <table>
+              <h1>Pedidos por hacer</h1>
+              <hr>
+              <tr>
+            
+                <th scope="col">Cliente</th>
+                <th scope="col">Sabor</th>
+                <th scope="col">Adornos</th>
+                <th scope="col">ID de pedido</th>
+              </tr>
+              <tr>
+            
+                <td>Ariel</td>
+                <td>Chocolate</td>
+                <td>Chispas de chocolate</td>
+                <td>002</td>
+              </tr><tr>
+            
+                <td>José</td>
+                <td>Vainilla y fresa</td>
+                <td>Fresas</td>
+                <td>005</td>
+              </tr><tr>
+            
+                <td>Ana</td>
+                <td>Cajeta</td>
+                <td>Durazno y núez</td>
+                <td>006</td>
+              </tr><tr>
+            
+                <td>Itzel</td>
+                <td>Vainilla</td>
+                <td>Sin adornos</td>
+                <td>007</td>
+              </tr>
+            </table>
+            </article>
+
+            <footer>
+              <p>¡buen trabajo!</p>
+          </footer>
+            
+              

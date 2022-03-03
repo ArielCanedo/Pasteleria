@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title> 
+    <script language="javascript">
+        //VALIDACION CHECKBOX
+        function validacion(formu, obj) {
+          limite=2; //limite de checks a seleccionar
+          num=0;
+          if (obj.checked) {
+            for (i=0; ele=document.getElementById(formu).children[i]; i++)
+              if (ele.checked) num++;
+          if (num>limite)
+            obj.checked=false;
+          }
+        }
+
+        function validacion2(formu, obj) {
+          limite=3; //limite de checks a seleccionar
+          num=0;
+          if (obj.checked) {
+            for (i=0; ele=document.getElementById(formu).children[i]; i++)
+              if (ele.checked) num++;
+          if (num>limite)
+            obj.checked=false;
+          }
+        }  
+        function mostrar_imagen(id) {
+           img = document.getElementById(id);
+           img.innerHTML = '<img src="https://i.imgur.com/Fa7nBuRt.gif" />';
+        }
+        </script>
+    <style>
+        div.contenedor {
+        width: 80%;
+         background-color: #f1f1f1
+        }
+
+        button.centrado {
+        width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+        margin-left: 50%;
+        transform: translateX(-50%);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(243, 94, 218);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 27%;
+            height: 1155px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 2px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 2px;
+            width: 73%;
+            background-color: #f1f1f1;
+            height: 1155px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(243, 94, 218);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Haz un pedido</h2>
+        
+        
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <a href="https://imgur.com/lo2lU3D"><img src="https://i.imgur.com/lo2lU3D.png" width="420" height="480" title="logo psateleria" /></a><br>
+
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Selecciona el sabor de tu pastel</h2>
+            <h3>(Puedes combinarlos, pero solo hasta dos sabores)</h3>
+            <div id="form1">
+            <input type="checkbox" id="saborpas1" name="saborpas1" onchange="validacion('form1', this)" />
+            <label for="saborpas1">Chocolate...................... $500</label><br>
+            <input type="checkbox" id="saborpas2" name="saborpas2" onchange="validacion('form1', this)" />
+            <label for="saborpas2">Vainilla........................... $500</label><br>
+            <input type="checkbox" id="saborpas3" name="saborpas3" onchange="validacion('form1', this)" />
+            <label for="saborpas3">Fresa............................. $500</label><br>
+            <input type="checkbox" id="saborpas4" name="saborpas4" onchange="validacion('form1', this)" />
+            <label for="saborpas4">Cajeta..............................$500</label>
+            <h4>*Elegir más de un sabor genera un costo extra de $200*</h4>
+            </div>
+
+            <hr>
+            <a href="https://imgur.com/x64kJF6"><img src="https://i.imgur.com/x64kJF6.jpg" width="140" title="psatel de fresa" /></a>
+            <a href="https://imgur.com/0MvjhW8"><img src="https://i.imgur.com/0MvjhW8.gif" width="140" title="deliciosos pasteles" /></a>
+            <a href="https://imgur.com/kIyfJpC"><img src="https://i.imgur.com/kIyfJpC.jpg" width="140" title="pastel de vainilla" /></a>
+            <hr>
+
+            <h2>Adonornos para decorar tu pastel</h2>
+            <h3>(Puedes combinarlos)</h3>
+            <div id="form2">
+            <input type="checkbox" id="adorno1" name="adorno1" onchange="validacion2('form2', this)" />
+            <label for="adorno1">Chispas de chocolate........$100</label><br>
+            <input type="checkbox" id="adorno2" name="adorno2" onchange="validacion2('form2', this)" />
+            <label for="adorno2">Durazno........... ................ $100</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" onchange="validacion2('form2', this)" />
+            <label for="adorno3">Barra de chocolate........... $100</label><br>
+            <input type="checkbox" id ="adorno4" name="adorno4" onchange="validacion2('form2', this)" />
+            <label for="adorno4">Núez..................................$150</label><br>
+            <input type="checkbox" id ="adorno5" name="adorno5" onchange="validacion2('form2', this)" />
+            <label for="adorno5">Fresas.................................$150</label>
+            <h2>Recurda solo elegir hasta tres adornos</h2>
+            
+            </div>
+
+            <hr>
+            <h2>Datos parsonales</h2>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name">
+              </li><br>
+              <li>
+                  <label for="cel">Teléfono:</label>
+                  <input type="number" id="num" name="user_cel">
+              </li><br>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail">
+              </li><br>
+              <li>
+                <label for="adrs">Direccion:</label>
+                <textarea id="adrs" name="user_adress" cols="40" rows="1"></textarea>
+              </li><br>
+                 <label for="msg">Agrega comentarios adicionales:</label>
+                 <textarea cols="50" rows="3"></textarea>
+                 <li class="button">
+                    <div class="contenedor">
+                        <button class="centrado" onClick="javascript:mostrar_imagen('imagen')">Finalizar compra</button>
+                        <div id="imagen">
+                        </div>
+                      </div>
+                   </li>
+
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Te esperamos en Blvd Colosio #123</p>
+        <p>Teléfono 66-XX-XX-XX-XX</p>
+        <p>Todos los días de 9am a 6pm</p>
+    </footer>
+
+</body>
+
+</html>
