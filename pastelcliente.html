@@ -17,7 +17,7 @@
             obj.checked=false;
           }
         }
-
+        
         function validacion2(formu, obj) {
           limite=3; //limite de checks a seleccionar
           num=0;
@@ -28,10 +28,8 @@
             obj.checked=false;
           }
         }  
-        function mostrar_imagen(id) {
-           img = document.getElementById(id);
-           img.innerHTML = '<img src="https://i.imgur.com/Fa7nBuRt.gif" />';
-        }
+
+
         </script>
     <style>
         div.contenedor {
@@ -60,17 +58,18 @@
             text-align: center;
             font-size: 35px;
             color: white;
-            height: 150px;
+            
         }
 
         /* Crear 2 columnas con la misma posición en la fila */
         nav {
             float: left;
             width: 27%;
-            height: 1363px;
+            height: auto;
             /* only for demonstration, should be removed */
             background: #ccc;
             padding: 1px;
+    
         }
 
         nav ul {
@@ -83,7 +82,7 @@
             padding: 2px;
             width: 73%;
             background-color: #f1f1f1;
-            height: 1363px;
+            height: auto;
         }
 
         /* Clear floats after the columns */
@@ -113,6 +112,9 @@
         }
         textarea {
             resize: none;
+        }
+        section {
+            display: flex;
         }
     </style>
 </head>
@@ -195,8 +197,8 @@
                  </li><br>
                     <div class="contenedor">
                         </div>
-                        <button class="centrado" onClick="javascript:mostrar_imagen('imagen')">Finalizar compra</button>
-                        <div id="imagen">
+                        <button class="centrado" onClick="alert('¡Gracias por tu compra!')">Finalizar compra</button>
+                        <div id="imagen"><br>
                         </div>
                     </div>
 
