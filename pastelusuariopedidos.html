@@ -26,17 +26,16 @@
             text-align: center;
             font-size: 35px;
             color: white;
-            height: 150px;
         }
   
         /* Crear 2 columnas con la misma posición en la fila */
         nav {
             float: left;
-            width: 27%;
-            height: 600px;
+            width: auto;
+            height: auto;
             /* only for demonstration, should be removed */
             background: #ccc;
-            padding: 2px;
+            padding: auto;
         }
   
         nav ul {
@@ -49,7 +48,7 @@
             padding: 2px;
             width: 73%;
             background-color: #f1f1f1;
-            height: 600px;
+            height: auto;
         }
   
         /* Clear floats after the columns */
@@ -58,15 +57,6 @@
             display: table;
             clear: both;
         }
-  
-        /* Estilo de footer */
-        footer {
-            background-color: rgb(243, 94, 218);
-            padding: 5px;
-            text-align: center;
-            color: white;
-        }
-  
         /* Responsive layout */
         @media (max-width: 600px) {
   
@@ -75,10 +65,24 @@
                 width: 100%;
                 height: auto;
             }
+            textarea {
+                resize: none;
+            }
+        }
+         
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(243, 94, 218);
+            padding: 1px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            }
             section {
-            display: flex;
-        }
-        }
+                display: flex;
+            }
     </style>
       </head>
 
@@ -94,9 +98,9 @@
               <nav>
                   <ul>
                       <a href="https://imgur.com/lo2lU3D"><img src="https://i.imgur.com/lo2lU3D.png" width="420" height="480" title="logo psateleria" /></a><br>
-                      <a href="https://arielcanedo.github.io/Pasteleria/">Inicio</a><br>
-                      <a href="pastelusuario.html">Ingredientes</a><br>
-                      <a href="pastelusuariopedidos.html">Pedidos</a><br>
+                      <a style="font-size: 20px" href="https://arielcanedo.github.io/Pasteleria/">Inicio</a>
+                      <a style="font-size: 20px" href="pastelusuario.html">Ingredientes</a>
+                      <a style="font-size: 20px" href="pastelusuariopedidos.html">Pedidos</a>
                   </ul>
                 </nav>
 
@@ -143,3 +147,5 @@
                 <footer>
                     <p>¡buen trabajo!</p>
                 </footer>
+            </body>
+            </html>

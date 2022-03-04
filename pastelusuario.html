@@ -6,79 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliente</title>
     <style>
-      div.contenedor {
-      width: 80%;
-       background-color: #f1f1f1
-      }
+     div.contenedor {
+        width: 80%;
+         background-color: #f1f1f1
+        }
 
-      * {
-          box-sizing: border-box;
-      }
+        button.centrado {
+        width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+        margin-left: 50%;
+        transform: translateX(-50%);
+        }
 
-      body {
-          font-family: Arial, Helvetica, sans-serif;
-      }
+        * {
+            box-sizing: border-box;
+        }
 
-      /* Estilo de header */
-      header {
-          background-color: rgb(243, 94, 218);
-          padding: 10px;
-          text-align: center;
-          font-size: 35px;
-          color: white;
-          height: 150px;
-      }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-      /* Crear 2 columnas con la misma posición en la fila */
-      nav {
-          float: left;
-          width: 27%;
-          height: 600px;
-          /* only for demonstration, should be removed */
-          background: #ccc;
-          padding: 2px;
-      }
+        /* Estilo de header */
+        header {
+            background-color: rgb(243, 94, 218);
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            
+        }
 
-      nav ul {
-          list-style-type: none;
-          padding: 0;
-      }
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: auto;
+            height: auto;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: auto;
+    
+        }
 
-      article {
-          float: left;
-          padding: 2px;
-          width: 73%;
-          background-color: #f1f1f1;
-          height: 600px;
-      }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-      /* Clear floats after the columns */
-      section::after {
-          content: "";
-          display: table;
-          clear: both;
-      }
+        article {
+            float: left;
+            padding: 2px;
+            width: 73%;
+            background-color: #f1f1f1;
+            height: auto;
+        }
 
-      /* Estilo de footer */
-      footer {
-          background-color: rgb(243, 94, 218);
-          padding: 5px;
-          text-align: center;
-          color: white;
-      }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-      /* Responsive layout */
-      @media (max-width: 600px) {
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(243, 94, 218);
+            padding: auto;
+            text-align: center;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
 
-          nav,
-          article {
-              width: 100%;
-              height: auto;
-          }
-          section {
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        textarea {
+            resize: none;
+        }
+        section {
             display: flex;
         }
-      }
   </style>
   </head>
 
@@ -94,9 +107,9 @@
           <nav>
               <ul>
                 <a href="https://imgur.com/lo2lU3D"><img src="https://i.imgur.com/lo2lU3D.png" width="420" height="480" title="logo psateleria" /></a><br>
-                <a href="https://arielcanedo.github.io/Pasteleria/">Inicio</a><br>
-                <a href="pastelusuario.html">Ingredientes</a><br>
-                <a href="pastelusuariopedidos.html">Pedidos</a><br>
+                <a style="font-size: 20px" href="https://arielcanedo.github.io/Pasteleria/">Inicio</a>
+                <a style="font-size: 20px" href="pastelusuario.html">Ingredientes</a>
+                <a style="font-size: 20px" href="pastelusuariopedidos.html">Pedidos</a>
   
               </ul>
           </nav>
@@ -195,4 +208,6 @@
               <p>¡buen trabajo!</p>
           </footer>
             
+        </body>
+        </html>
               

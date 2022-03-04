@@ -64,11 +64,11 @@
         /* Crear 2 columnas con la misma posición en la fila */
         nav {
             float: left;
-            width: 27%;
+            width: auto;
             height: auto;
             /* only for demonstration, should be removed */
             background: #ccc;
-            padding: 1px;
+            padding: auto;
     
         }
 
@@ -131,13 +131,16 @@
         <nav>
             <ul>
                 <a href="https://imgur.com/lo2lU3D"><img src="https://i.imgur.com/lo2lU3D.png" width="420" height="480" title="logo psateleria" /></a><br>
-                <a href="https://arielcanedo.github.io/Pasteleria/">Inicio</a>
+                <a style="font-size: 35px" href="https://arielcanedo.github.io/Pasteleria/">Inicio</a><br>
+                <a style="font-size: 35px" href="https://arielcanedo.github.io/Pasteleria/">Quienes somos</a><br>
+                <a style="font-size: 35px" href="https://arielcanedo.github.io/Pasteleria/">Nuestra misión</a><br>
+                <a style="font-size: 35px" href="https://arielcanedo.github.io/Pasteleria/">Contáctanos</a><br>
             </ul>
         </nav>
 
         <article>
             <h2 align="center">Selecciona el sabor de tu pastel</h2>
-            <p>(Máximo dos*)<p>
+            <br>
             <div id="form1">
             <input type="checkbox" id="saborpas1" name="saborpas1" onchange="validacion('form1', this)" />
             <label for="saborpas1">Chocolate...................... $500</label><br><br>
@@ -147,7 +150,7 @@
             <label for="saborpas3">Fresa............................. $500</label><br><br>
             <input type="checkbox" id="saborpas4" name="saborpas4" onchange="validacion('form1', this)" />
             <label for="saborpas4">Cajeta.............................$500</label><br><br>
-            <h4>*Segundo sabor..................$200*</h4>
+            <p>*Segundo sabor..................$200*</p>
             </div>
 
             <hr>
@@ -157,7 +160,7 @@
             <hr>
 
             <h2 align="center">Adornos para decorar tu pastel</h2>
-            <p>(Puedes combinarlos)<p>
+            <br>
             <div id="form2">
             <input type="checkbox" id="adorno1" name="adorno1" onchange="validacion2('form2', this)" />
             <label for="adorno1">Chispas de chocolate........ $100</label><br><br>
@@ -169,7 +172,7 @@
             <label for="adorno4">Nuez.................................. $150</label><br><br>
             <input type="checkbox" id ="adorno5" name="adorno5" onchange="validacion2('form2', this)" />
             <label for="adorno5">Fresas............................... $150</label><br><br>
-            <h2>Máximo tres</h2>
+            <p>*Máximo tres*</p>
             
             </div>
 
